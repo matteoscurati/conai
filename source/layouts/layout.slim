@@ -1,0 +1,55 @@
+doctype html
+html
+  head
+    meta content="IE=edge" http-equiv="X-UA-Compatible"
+    meta charset="utf-8"
+    meta charset="ISO-8859-1"
+    meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"
+    title = "Il Sole 24 Ore"
+
+    link rel="stylesheet" type="text/css" href="http://c2.res.24o.it/fonts/fonts-montserrat.css?v1.0001"
+    link rel="stylesheet" type="text/css" href="http://c2.res.24o.it/fonts/w-fonts.css?v1.0001"
+    link rel="stylesheet" type="text/css" href="http://c2.res.24o.it/css2015/master-page-responsive-ns-common.css?v1.0002"
+
+    link rel="apple-touch-icon" sizes="57x57" href="http://c2.res.24o.it/ico/apple-touch-icon-57x57.png"
+    link rel="apple-touch-icon" sizes="60x60" href="http://c2.res.24o.it/ico/apple-touch-icon-60x60.png"
+    link rel="apple-touch-icon" sizes="72x72" href="http://c2.res.24o.it/ico/apple-touch-icon-72x72.png"
+    link rel="apple-touch-icon" sizes="76x76" href="http://c2.res.24o.it/ico/apple-touch-icon-76x76.png"
+    link rel="apple-touch-icon" sizes="114x114" href="http://c2.res.24o.it/ico/apple-touch-icon-114x114.png"
+    link rel="apple-touch-icon" sizes="120x120" href="http://c2.res.24o.it/ico/apple-touch-icon-120x120.png"
+    link rel="apple-touch-icon" sizes="144x144" href="http://c2.res.24o.it/ico/apple-touch-icon-144x144.png"
+    link rel="apple-touch-icon" sizes="152x152" href="http://c2.res.24o.it/ico/apple-touch-icon-152x152.png"
+    link rel="apple-touch-icon" sizes="180x180" href="http://c2.res.24o.it/ico/apple-touch-icon-180x180.png"
+    link rel="icon" type="image/png" href="http://c2.res.24o.it/ico/favicon-32x32.png" sizes="32x32"
+    link rel="icon" type="image/png" href="http://c2.res.24o.it/ico/android-chrome-192x192.png" sizes="192x192"
+    link rel="icon" type="image/png" href="http://c2.res.24o.it/ico/favicon-96x96.png" sizes="96x96"
+    link rel="icon" type="image/png" href="http://c2.res.24o.it/ico/favicon-16x16.png" sizes="16x16"
+
+    = partial "partials/googletag"
+    = partial "partials/googletag-second"
+
+    = stylesheet_link_tag :application
+    link rel="stylesheet" type="text/css" href="http://c2.res.24o.it/fonts/w-fonts.css?v1.0001"
+  body.page_classes
+    header.header
+      = link_to "http://www.ilsole24ore.com/" do
+        = image_tag "logo_sole.png"
+    .content
+      = yield
+    = partial "partials/footer"
+    = partial "partials/track"
+    = javascript_include_tag :application
+    script type="text/javascript" src="http://dclamp.ilsole24ore.com/header2016/dist/js/24o.headerfooter-lib.min.js"
+    script type="text/javascript" src="http://dclamp.ilsole24ore.com/header2016/dist/js/24o.headerfooter.js"
+    javascript:
+      var googletag = googletag || {};
+      googletag.cmd = googletag.cmd || [];
+      (function() {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+      })();
