@@ -33,7 +33,6 @@ set :images_dir, 'dist/images'
 # External pipeline
 activate :external_pipeline,
   name: :gulp,
-  #command: build? ? 'gulp build --production' : './node_modules/gulp/bin/gulp.js',
   command: build? ? 'gulp build --production' : 'gulp default',
   source: "dist",
   latency: 1
