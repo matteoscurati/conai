@@ -1,0 +1,28 @@
+.wrapper
+  background-color: $azure
+  +padding-bottom(2)
+
+.wrapper__heading
+  color: $white
+  +heading-font-family
+  +font-size(mega)
+  line-height: 1.2
+  text-transform: uppercase
+  +padding-bottom(1)
+
+.wrapper__subtitle
+  color: $blue
+  +font-size(gamma)
+  +heading-font-family
+  line-height: 1.2
+  text-transform: uppercase
+  +padding-bottom(1)
+
+.wrapper__text
+  +padding-left(0)
+  +body-font-family
+  +font-size(delta)
+  line-height: 1.3
+
+  +at-breakpoint(lap)
+    +padding-left(4)
