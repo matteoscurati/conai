@@ -1,0 +1,21 @@
+.news
+  .wrap
+    .news__body
+      .news__body__inner
+        .news__heading
+        .news__news
+          .grid
+            - 4.times do
+              .grid__item.width-6-12.lap-3-12
+                .box
+                  .box__body
+                    .box__image
+                    .box__body__inner
+                      .box__heading
+                        h3 = lorem.words 4
+                      .box__text
+                        p
+                          = lorem.sentences 2
+                          |  
+                          = link_to "#" do
+                            span ... leggi tutto
