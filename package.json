@@ -5,10 +5,15 @@
   "author": "Matteo Scurati",
   "license": "ISC",
   "browser": {
-    "jQuery": "./node_modules/jquery/dist/jquery.js"
+    "modernizr": "./source/assets/javascripts/vendor/modernizr.js",
+    "jQuery": "./node_modules/jquery/dist/jquery.js",
+    "sticky": "./source/assets/javascripts/vendor/sticky.js"
   },
   "browserify-shim": {
-    "jQuery": "$"
+    "jQuery": "$",
+    "modernizr": "Modernizr",
+    "sticky": "sticky",
+    "three": "global:THREE"
   },
   "browserify": {
     "transform": [
@@ -51,6 +56,9 @@
     "yargs": "^4.7.1"
   },
   "dependencies": {
-    "jquery": "^3.0.0"
+    "jquery": "^3.0.0",
+    "jquery-ui": "^1.10.5",
+    "jquery-ui-touch-punch": "^0.2.3",
+    "plyr": "^1.8.2"
   }
 }
