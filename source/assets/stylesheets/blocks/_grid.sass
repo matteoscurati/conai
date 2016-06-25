@@ -26,6 +26,13 @@
 .grid__item
   +grid-item
 
+.grid__item--space
+  @extend .grid__item
+  +padding-top(1)
+
+  +at-breakpoint(lap)
+    +padding-top(0)
+
 .grid--rev
   @extend .grid
   direction: rtl

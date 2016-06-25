@@ -44,3 +44,21 @@ $(document).ready(() => {
     });
   })(jQuery);
 });
+
+let clics = 0;
+
+$(document).ready(function() {
+  $('.answer').hide();
+  $('#closeall').hide();
+  $('h3.todo__title--expandable').click(function() {
+    let answer = $(this).closest(".faq").find(".answer");
+    answer.toggle(function() {
+      answer;
+    });
+    if ($(this).hasClass('close')) {
+      $(this).removeClass('close');
+    } else {
+      $(this).addClass('close');
+    };
+  });
+});
