@@ -1,14 +1,19 @@
 .hero
   background-repeat: no-repeat
   background-position: center center
-  background-color: $light-bg-color
+  background-color: $white
   background-size: cover
   position: relative
 
+  +at-breakpoint(lap)
+    margin-top: 50px
+
 .hero--conai
-  background-color: $azure
-  color: $white
-  margin-top: 50px
+  background-image: image-url("conai.jpg")
+  background-repeat: no-repeat
+  background-position: top center
+  background-size: cover
+  position: relative
 
 .hero__body
   display: table
@@ -20,6 +25,18 @@
   vertical-align: middle
   +vertical-padding(4)
 
+  &.is-small-padding
+    +padding-top(1)
+    +padding-bottom(1)
+
+    +at-breakpoint(lap)
+      +padding-top(4)
+
+.hero__body__inner--azure
+  +margin-top(8)
+  +padding-bottom(0)
+  background-color: rgba($azure, 0.8)
+
 .hero__heading
   +heading-font-family
   +font-size(alpha)
@@ -27,6 +44,18 @@
   margin-left: auto
   margin-right: auto
   max-width: 800px
+
+.hero__heading--azure
+  +heading-font-family
+  line-height: 1.2
+  margin-left: auto
+  margin-right: auto
+  max-width: 800px
+  color: white
+  +font-size(iper)
+  text-transform: uppercase
+  +padding-top(6)
+  +padding-bottom(1)
 
 .hero__text
   +heading-font-family
@@ -36,15 +65,20 @@
   margin-left: auto
   margin-right: auto
 
+.hero__text--azure
+  +body-font-family
+  color: $white
+  +font-size(gamma)
+  +padding-bottom(2)
+
 .hero__actions
   color: white
   z-index: 100
-  margin-top: -1px
-  background-color: $azure
-  +font-size(epsilon)
+  background-color: $blue
+  +font-size(zeta)
 
   +at-breakpoint(lap)
-    +font-size(delta)
+    +font-size(eta)
 
   a
     color: white
@@ -53,13 +87,16 @@
     font-style: normal
 
 .hero__actions--desk
+  height: 50px
   @extend .hero__actions
   display: none
 
   +at-breakpoint(lap)
     display: block
+    position: fixed
 
 .hero__actions--mobile
+  margin-top: 50px
   @extend .hero__actions
   display: block
 
@@ -67,9 +104,8 @@
     display: none
 
 .hero__actions--inner
+  height: 100%
   width: 100%
-  background-color: $blue
-  +vertical-padding(0.8)
   text-align: center
   +heading-font-family
 

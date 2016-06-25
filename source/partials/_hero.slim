@@ -1,14 +1,3 @@
-.hero--conai
-  .wrap
-    .hero__body
-      .hero__body__inner
-        .grid--right
-          .grid--item
-            = image_tag "conai__logo.svg", class: "conai--logo"
-        .hero__text.wow.fadeIn
-          = image_tag "conai__title.png", class: "conai--title"
-        .hero__text.wow.fadeIn data-wow-delay="0.3s" data-wow-offset="100"
-          = image_tag "conai__subtitle.png", class: "conai--subtitle"
 .hero__actions--desk
   .hero__actions--inner
     .nav--expand#nav
@@ -31,3 +20,21 @@
         a href="#" menu
       .nav__item
         a href="#" menu
+.hero
+  .wrap
+    .hero__body
+      .hero__body__inner.is-small-padding
+        .grid--center
+          .grid--item
+            = image_tag "conai__logo.svg", class: "conai--logo"
+.hero--conai
+  .wrap
+    .hero__body
+      .hero__body__inner--azure
+        .hero__heading--azure.wow.fadeIn
+          h1 Tutti in regola
+        .hero__text--azure.wow.fadeIn
+          h2
+            | Incentivi per la regolarizzazione agevolata
+            br
+            | delle micro e piccole imprese
