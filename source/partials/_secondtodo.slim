@@ -20,8 +20,8 @@
             .grid__item--space.width-12-12.tab-7-12.lap-8-12
               .todo__subtitle
                 h5 = lorem.words 3
-              .formatted-content
+              .formatted-content.space--bottom-1
                 p = lorem.paragraph
                 p = lorem.paragraph
                 p = lorem.sentence
-                = partial "partials/link", locals: { objects: { "Stringa di testo": "link", "Stringa di testo ancora": "link" } }
+              = partial "partials/link", locals: { objects: { "Stringa di testo": "link", "Stringa di testo ancora": "link" } }
