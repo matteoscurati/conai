@@ -37,7 +37,47 @@
   margin-right: auto
 
 .hero__actions
-  +margin-top(2)
+  color: white
+  z-index: 100
+  margin-top: -1px
+  background-color: $azure
+  +font-size(epsilon)
+
+  +at-breakpoint(lap)
+    +font-size(delta)
+
+  a
+    color: white
+    text-decoration: none
+    text-transform: uppercase
+    font-style: normal
+
+.hero__actions--desk
+  @extend .hero__actions
+  display: none
+
+  +at-breakpoint(lap)
+    display: block
+
+.hero__actions--mobile
+  @extend .hero__actions
+  display: block
+
+  +at-breakpoint(lap)
+    display: none
+
+.hero__actions--inner
+  width: 100%
+  background-color: $blue
+  +vertical-padding(0.8)
+  text-align: center
+  +heading-font-family
+
+.sticky-wrapper
+  display: none
+
+  +at-breakpoint(lap)
+    display: block
 
 .hero--primary
   @extend .hero

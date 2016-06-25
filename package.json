@@ -7,12 +7,14 @@
   "browser": {
     "modernizr": "./source/assets/javascripts/vendor/modernizr.js",
     "jQuery": "./node_modules/jquery/dist/jquery.js",
-    "sticky": "./source/assets/javascripts/vendor/sticky.js"
+    "sticky": "./source/assets/javascripts/vendor/sticky.js",
+    "wow": "./node_modules/wow.js/dist/wow.js"
   },
   "browserify-shim": {
     "jQuery": "$",
     "modernizr": "Modernizr",
     "sticky": "sticky",
+    "wow": "wow",
     "three": "global:THREE"
   },
   "browserify": {
@@ -59,6 +61,7 @@
     "jquery": "^3.0.0",
     "jquery-ui": "^1.10.5",
     "jquery-ui-touch-punch": "^0.2.3",
-    "plyr": "^1.8.2"
+    "plyr": "^1.8.2",
+    "wow.js": "^1.2.0"
   }
 }

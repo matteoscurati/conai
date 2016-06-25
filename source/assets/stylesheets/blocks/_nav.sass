@@ -5,11 +5,11 @@
 .nav__item
   @extend %nav-item
 
-  &:before
-    content: "\00A0"
-    text-decoration: none
-    display: inline-block
-    color: $base-body-color
+  //&:before
+    //content: "\00A0"
+    //text-decoration: none
+    //display: inline-block
+    //color: $base-body-color
 
   &:first-child:before
     display: none
@@ -51,7 +51,16 @@
   .nav__item--last
     padding: 0.4em
 
-+at-breakpoint(desk)
+.nav--expand
+  display: block
+  width: 100%
+
+  .nav__item
+    display: block
+    margin: 0
+    +padding(0.5)
+
++at-breakpoint(tab)
   .nav--expand
     display: table
     width: 100%
@@ -61,4 +70,3 @@
       display: table-cell
       margin: 0
       white-space: nowrap
-
