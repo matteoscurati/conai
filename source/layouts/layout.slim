@@ -33,7 +33,9 @@ html
   body.page_classes
     header.header
       = link_to "http://www.ilsole24ore.com/" do
-        = image_tag "logo_sole.png"
+        .__s24
+          span.icon-sole
+        /= image_tag "logo_sole.png"
     .content
       = yield
     = partial "partials/footer"
