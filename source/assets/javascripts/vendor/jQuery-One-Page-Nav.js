@@ -180,7 +180,7 @@
 		},
 
 		scrollTo: function(target, callback) {
-			var menu_height = $('.hero__actions--desk').outerHeight();
+			var menu_height = $('.hero__actions').outerHeight();
 			var offset = $(target).offset().top - menu_height;
 
 			$('html, body').animate({

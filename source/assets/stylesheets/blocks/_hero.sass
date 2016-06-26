@@ -14,6 +14,7 @@
   background-position: top center
   background-size: cover
   position: relative
+  margin-top: 130px
 
 .hero__body
   display: table
@@ -70,50 +71,6 @@
   color: $white
   +font-size(gamma)
   +padding-bottom(2)
-
-.hero__actions
-  color: white
-  z-index: 100
-  background-color: $blue
-  +font-size(zeta)
-
-  +at-breakpoint(lap)
-    +font-size(eta)
-
-  a
-    color: white
-    text-decoration: none
-    text-transform: uppercase
-    font-style: normal
-
-.hero__actions--desk
-  height: 50px
-  @extend .hero__actions
-  display: none
-
-  +at-breakpoint(lap)
-    display: block
-    position: fixed
-
-.hero__actions--mobile
-  margin-top: 50px
-  @extend .hero__actions
-  display: block
-
-  +at-breakpoint(lap)
-    display: none
-
-.hero__actions--inner
-  height: 100%
-  width: 100%
-  text-align: center
-  +heading-font-family
-
-.sticky-wrapper
-  display: none
-
-  +at-breakpoint(lap)
-    display: block
 
 .hero--primary
   @extend .hero

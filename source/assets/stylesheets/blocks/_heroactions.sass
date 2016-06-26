@@ -1,0 +1,78 @@
+.hero__actions
+  width: 100%
+  height: 80px
+  overflow: hidden
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 999
+  background-color: $white
+  color: $black
+  transition: height 0.3s
+  margin-top: 50px
+  padding-bottom: 5px
+  padding-top: 5px
+  border-bottom: 1px solid #d1c0af
+
+  #logo img
+    display: inline-block
+    height: 70px
+    float: left
+    transition: all 0.3s
+
+  nav
+    display: inline-block
+    float: right
+
+    a
+      line-height: 70px
+      margin-left: 20px
+      +heading-font-family
+      color: $blue
+      transition: all 0.3s
+      text-decoration: none
+      font-style: normal
+      text-transform: uppercase
+
+      &:hover
+        color: white
+
+  &.smaller
+    height: 50px
+
+    #logo img
+      height: 40px
+
+    nav a
+      line-height: 40px
+
+@media all and (max-width: 660px)
+
+  .hero__actions
+    height: 120px
+
+    #logo img
+      display: block
+      float: none
+      margin: 0 auto
+      height: 60px
+      line-height: 60px
+      text-align: center
+    nav
+      display: block
+      float: none
+      height: 50px
+      text-align: center
+      margin: 0 auto
+      a
+        line-height: 50px
+        margin: 0 10px
+
+    &.smaller
+      height: 80px
+      #logo img
+        height: 40px
+      nav
+        height: 30px
+        a
+          line-height: 30px

@@ -1,5 +1,6 @@
 import $ from 'jQuery';
-import './vendor/jQuery-One-Page-Nav.js';
+import classie from 'desandro-classie';
+import smoothScroll from 'smooth-scroll';
 import './vendor/player.js.es6';
 
 require('jquery-ui');
@@ -8,18 +9,14 @@ require('modernizr');
 require('wow');
 
 $(document).ready(() => {
-  $('#nav').onePageNav({
-  });
-});
-
-$(document).ready(() => {
-  $('#nav--mobile').onePageNav({
-  });
-});
-
-$(document).ready(() => {
   new WOW().init();
   const wow = new WOW({});
+});
+
+$(document).ready(() => {
+  smoothScroll.init({
+    offset: 100
+  });
 });
 
 $(document).ready(() => {
@@ -53,3 +50,36 @@ $(document).ready(function() {
     };
   });
 });
+
+$(document).ready(function() {
+  const menu = $(".hero__actions__items");
+  const hamburger = $(".hero__actions__hamburger");
+
+  $(".hero__actions__hamburger").click((e) => {
+    e.preventDefault();
+    console.log("Ciao");
+    if(menu.hasClass("is-open")) {
+      menu.removeClass("is-open");
+      hamburger.removeClass("expanded");
+    } else {
+      menu.addClass("is-open");
+      hamburger.addClass("expanded");
+    }
+  });
+});
+
+function init() {
+  window.addEventListener('scroll', function(e){
+    var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+      shrinkOn = 300,
+      header = document.querySelector(".hero__actions");
+    if (distanceY > shrinkOn) {
+      classie.add(header,"smaller");
+    } else {
+      if (classie.has(header,"smaller")) {
+        classie.remove(header,"smaller");
+      }
+    }
+  });
+}
+window.onload = init();
