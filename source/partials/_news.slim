@@ -11,17 +11,17 @@
                 span.icon-sole
         .news__news
           .grid
-            - 4.times do
-              .grid__item.width-6-12.lap-3-12
-                .box
-                  .box__body
-                    .box__image
-                    .box__body__inner
-                      .box__heading
-                        h3 = lorem.words 4
-                      .box__text
-                        p
-                          = lorem.sentences 2
-                          |  
-                          = link_to "#" do
+            - news = data.news.box.slice(0..3)
+            - news.each do |b|
+              = link_to(b.link, html_options =  { target: "_blank" } ) do
+                .grid__item.width-6-12.lap-3-12
+                  .box
+                    .box__body
+                      .box__image style="background: url('/dist/images/news/#{b.img}') no-repeat left center; background-size: cover"
+                      .box__body__inner
+                        .box__heading
+                          h3 = b.title
+                        .box__text
+                          p
+                            = markdown(b.text)
                             span ... leggi tutto
