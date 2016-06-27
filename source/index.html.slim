@@ -1,6 +1,6 @@
 = partial "partials/hero"
-- 3.times do
-  = partial "partials/presentation"
+- data.main.wrapper.each do |c|
+  = partial "partials/presentation", locals: { c: c }
 = partial "partials/news"
 = partial "partials/video"
 = partial "partials/firsttitle"
