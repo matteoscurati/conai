@@ -7,7 +7,7 @@
           .grid
             .grid__item.width-1-12
               .todo__number
-                p 3.
+                p 4.
             .grid__item.width-11-12
               .todo__title
                 h3.todo__title--expandable = r.title
@@ -18,4 +18,3 @@
                 p = markdown(r.text)
             .grid__item.width-12-12.tab-5-12.lap-4-12
               = partial "partials/link", locals: { objects: { "Servizio &ldquo;Dichiarazione on line&rdquo;": "https://dichiarazioni.conai.org/logon/default.aspx?ReturnUrl=%2f", "Modello di richiesta di regolarizzazione agevolata (PDF compilabile da PC)": "http://www.conai.org/download/modello-richiesta-regolarizzazione-agevolata/" } }
-              = partial "partials/link", locals: { objects: { "Servizio &ldquo;Dichiarazione on line&rdquo;": "https://dichiarazioni.conai.org/logon/default.aspx?ReturnUrl=%2f", "Modulo 6.2/Import online (fac-simile)": "http://www.conai.org/download/modulo-6-2import-2016/", "Mod. 6.2/Istruzioni per la compilazione on line": "http://www.conai.org/download/modulo-6-2import-2016/a" } }
