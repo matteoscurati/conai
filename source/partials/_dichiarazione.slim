@@ -1,0 +1,30 @@
+- d = data.dichiarazione
+.todo
+  .wrap
+    .todo__body
+      .todo__body__inner.faq
+        .todo__heading
+          .grid
+            .grid__item.width-1-12
+              .todo__number
+                p 2.
+            .grid__item.width-11-12
+              .todo__title
+                h3.todo__title--expandable = d.title
+        .todo__text.answer
+          .grid
+            .grid__item.width-12-12.tab-5-12.lap-4-12
+              .todo__subtitle.is-no-margin
+                h5
+                  | 2A. 
+                  = d.subtitle0
+              .formatted-content
+                p = markdown(d.text0)
+            .grid__item--space.width-12-12.tab-7-12.lap-8-12
+              .todo__subtitle.is-no-margin
+                h5
+                  | 2B. 
+                  = d.subtitle1
+              .formatted-content.space--bottom-1
+                p = markdown(d.text1)
+              = partial "partials/link", locals: { objects: { "Servizio &ldquo;Dichiarazione on line&rdquo;": "https://dichiarazioni.conai.org/logon/default.aspx?ReturnUrl=%2f", "Supporto (email)": "mailto:supporto@conai.org" } }
