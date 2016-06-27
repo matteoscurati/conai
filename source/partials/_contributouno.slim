@@ -25,9 +25,9 @@
           .grid--bottom
             .grid__item.width-12-12.lap-8-12
               .formatted-content.space--top-2
-                p = markdown(c.text0)
+                p = markdown(c.text2)
             .grid__item.width-12-12.lap-4-12
-              = partial "partials/link", locals: { objects: { "Servizio &ldquo;Dichiarazione on line&rdquo;": "https://dichiarazioni.conai.org/logon/default.aspx?ReturnUrl=%2f", "Modulo 6.2/Import online (fac-simile)": "http://www.conai.org/download/modulo-6-2import-2016/", "Mod. 6.2/Istruzioni per la compilazione on line": "http://www.conai.org/download/modulo-6-2import-2016/a" } }
+              = partial "partials/link", locals: { objects: { "Servizio &ldquo;Dichiarazione on line&rdquo;": "https://dichiarazioni.conai.org/logon/default.aspx?ReturnUrl=%2f", "Modulo 6.1/Legno online (fac-simile)": "http://www.conai.org/download/modulo-6-1legno-2016/", "Mod. 6.1/Istruzioni per la compilazione on line": "http://www.conai.org/download/moduli-6-1istruzioni-per-la-compilazione-2/" } }
           .grid--bottom.space--top-2
             .grid__item.width-1-12
               .todo__list--number
@@ -37,4 +37,4 @@
           .grid--bottom
             .grid__item.width-12-12.lap-8-12
               .formatted-content.space--top-2
-                p = markdown(c.text1)
+                p = markdown(c.text3)
