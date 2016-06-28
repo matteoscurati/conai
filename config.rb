@@ -74,7 +74,4 @@ helpers do
     TRANSFORMS.each.with_object(text) { |(from, to), t| t = t.gsub!(from, to) }
   end
 
-  def encode(text)
-
-  end
 end
