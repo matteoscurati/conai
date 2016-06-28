@@ -19,6 +19,6 @@
           .grid
             .grid__item.width-12-12.tab-7-12.lap-8-12
               .formatted-content
-                p = markdown(data.rilegno.text)
+                p = entity(markdown(data.rilegno.text))
             .grid__item.width-12-12.tab-5-12.lap-4-12
               = partial "partials/link", locals: { objects: { "Sito RILEGNO": "http://www.rilegno.org/" } }

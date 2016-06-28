@@ -20,8 +20,8 @@
                       .box__image style="background: url('/dist/images/news/#{b.img}') no-repeat left center; background-size: cover"
                       .box__body__inner
                         .box__heading
-                          h3 = b.title
+                          h3 = entity(b.title)
                         .box__text
                           p
-                            = markdown(b.text)
+                            = entity(markdown(b.text))
                             span ... leggi tutto
