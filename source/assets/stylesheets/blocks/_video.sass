@@ -1,12 +1,20 @@
 .video
   @extend .todo
   background-color: $white !important
-  +padding-top(2)
+  +padding-top(4)
+  +padding-bottom(8)
 
 .video__heading
   @extend .todo__heading
 
-.video__videos
+.video__title
+  color: $black
+  line-height: 1.2
+  +heading-font-family
+  +font-size(gamma)
+  +padding-top(4)
+  +padding-bottom(2)
+  text-transform: uppercase
 
 .video__video
   +margin-top(1)

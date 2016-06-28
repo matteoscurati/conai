@@ -2,7 +2,7 @@
 - data.main.wrapper.each do |c|
   = partial "partials/presentation", locals: { c: c }
 = partial "partials/news"
-/= partial "partials/video"
+= partial "partials/video"
 - first = data.title.title.slice(0)
 = partial "partials/title", locals: { t: first }
 = partial "partials/adesione"
