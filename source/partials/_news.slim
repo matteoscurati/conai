@@ -25,3 +25,28 @@
                           p
                             = entity(markdown(b.text))
                             span ... leggi tutto
+.news--second
+  .wrap
+    .news__body
+      .news__body__inner
+        .news__heading
+          .grid--middle
+            .grid__item.width-6-12.lap-8-12
+            .grid__item.width-6-12.lap-4-12.align--right.news__logo
+              .__s24
+        .news__news
+          .grid
+            - news = data.news.box.slice(4..7)
+            - news.each do |b|
+              = link_to(b.link, html_options =  { target: "_blank" } ) do
+                .grid__item.width-6-12.lap-3-12
+                  .box
+                    .box__body
+                      .box__image style="background: url('/dist/images/news/#{b.img}') no-repeat left center; background-size: cover"
+                      .box__body__inner
+                        .box__heading
+                          h3 = entity(b.title)
+                        .box__text
+                          p
+                            = entity(markdown(b.text))
+                            span ... leggi tutto

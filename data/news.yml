@@ -20,3 +20,23 @@ box:
       Anche la lotta agli imballaggi inquinanti aiuteranno il nostro pianeta a sopravvivere
     img: "2025.jpg"
     link: "http://www.ilsole24ore.com/art/tecnologie/2014-07-01/2025-addio-imballaggi-inquinanti-180326.shtml?uuid=ABwEjiWB&nmll=2707&fromSearch"
+  - title: "Incertezze fiscali e adempimenti"
+    text: |
+      Troppa burocrazia, adempimenti fiscali con norme incenre e scadenze che cambiano all'ultimo minuto
+    img: "incertezzefiscali.jpg"
+    link: "http://www.ilsole24ore.com/art/notizie/2013-11-19/incertezze-fiscali-e-adempimenti-incubi-quotidiani-commercialisti-ed-esperti-contabili-175044.shtml?uuid=AB4RvFe&fromSearch"
+  - title: "Commercialisti: «Valutazioni economiche strategiche»"
+    text: |
+      La specializzazione nella materia è ancora limitata, ma per la stragrande maggioranza dei commercialisti italiani
+    img: "commercialisti.jpg"
+    link: "http://www.ilsole24ore.com/art/norme-e-tributi/2016-05-13/commercialisti-valutazioni-economiche-strategiche-la-professione--182620.shtml?uuid=ADOR0fH&fromSearch"
+  - title: "Sms per gli adempimenti fiscali"
+    text: |
+      Dal 2011 l'Inps invia alert con sms per il pagamento dei contributi dei lavoratori domestici
+    img: "sms.jpg"
+    link: "http://www.ilsole24ore.com/art/norme-e-tributi/2016-05-24/sms-gli-adempimenti-fiscali-inps-e-entrate-primi-esperimenti-135835.shtml?uuid=ADpMZQO&fromSearch"
+  - title: "Separazioni e divorzi, un manuale per i commercialisti"
+    text: |
+      Non basta esaminare la dichiarazione dei redditi per verificare il tenore di vita e per avere la reale "fotografia"
+    img: "separazionidivorzi.jpg"
+    link: "http://www.ilsole24ore.com/art/norme-e-tributi/2016-05-18/separazioni-e-divorzi-manuale-i-commercialisti-ctu-redditi-e-patrimoni-valido-anche-unioni-e-convivenze-163748.shtml?uuid=ADDHDkK&fromSearch"
