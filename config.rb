@@ -73,5 +73,4 @@ helpers do
   def entity(text)
     TRANSFORMS.each.with_object(text) { |(from, to), t| t = t.gsub!(from, to) }
   end
-
 end
