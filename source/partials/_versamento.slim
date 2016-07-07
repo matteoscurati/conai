@@ -16,14 +16,17 @@
             .grid__item.width-12-12.tab-5-12.lap-4-12
               .todo__subtitle.is-no-margin
                 h5
-                  | 5A. 
+                  | 5A.
                   = d.sub0
               .formatted-content
-                p = markdown(d.text0)
+                p
+                  | Successivamente al ricevimento delle fatture emesse dal CONAI, ti verr&agrave; inviata la
+                  strong lettera di formalizzazione del piano di rientro
+                  |  in ragione del numero di rate richieste e secondo le condizioni previste dalla procedura agevolata.
             .grid__item--space.width-12-12.tab-7-12.lap-8-12
               .todo__subtitle.is-no-margin
                 h5
-                  | 5B. 
+                  | 5B.
                   = d.sub1
               .formatted-content.space--bottom-1
                 p = entity(markdown(d.text1))
