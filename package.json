@@ -60,6 +60,7 @@
   "dependencies": {
     "desandro-classie": "^1.0.1",
     "jquery": "^3.0.0",
+    "jquery-match-height": "^0.7.0",
     "jquery-ui": "^1.10.5",
     "jquery-ui-touch-punch": "^0.2.3",
     "plyr": "^1.8.2",

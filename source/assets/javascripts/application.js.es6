@@ -2,6 +2,7 @@ import $ from 'jQuery';
 import classie from 'desandro-classie';
 import smoothScroll from 'smooth-scroll';
 import './vendor/player.js.es6';
+import matchHeight from 'jquery-match-height';
 
 require('jquery-ui');
 require('jquery-ui-touch-punch');
@@ -83,3 +84,9 @@ function init() {
   });
 }
 window.onload = init();
+
+$(document).ready(() => {
+  if ($('.audio').length > 0) {
+    $('.audio__title').matchHeight();
+  }
+});
